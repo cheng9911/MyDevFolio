@@ -1,0 +1,87 @@
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="#ffffff"/>
+
+  <!-- Skill Feasibility Filtering -->
+  <rect x="50" y="50" width="1100" height="220" fill="#ffe6e6" stroke="#cc0000" stroke-width="2" rx="15"/>
+  <text x="600" y="80" font-size="20" text-anchor="middle" fill="#cc0000">Skill Feasibility Filtering</text>
+
+  <!-- Observation -->
+  <rect x="80" y="110" width="250" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="205" y="150" font-size="16" text-anchor="middle">Observation</text>
+  <text x="205" y="170" font-size="12" text-anchor="middle">(Camera Images)</text>
+
+  <!-- Candidate Skills -->
+  <rect x="870" y="110" width="250" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="995" y="150" font-size="16" text-anchor="middle">Candidate Skills</text>
+  <text x="995" y="170" font-size="12" text-anchor="middle">(Skill Descriptions)</text>
+
+  <!-- CLIP + Transformer -->
+  <rect x="450" y="140" width="300" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="600" y="170" font-size="16" text-anchor="middle">CLIP + Transformer</text>
+  <text x="600" y="190" font-size="12" text-anchor="middle">Feasibility Evaluation</text>
+
+  <!-- Arrows in Filtering -->
+  <line x1="330" y1="150" x2="450" y2="180" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="870" y1="150" x2="750" y2="180" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Feasible Skills Output -->
+  <rect x="500" y="250" width="200" height="50" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="600" y="280" font-size="16" text-anchor="middle">Feasible Skills</text>
+
+  <line x1="600" y1="220" x2="600" y2="250" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Language Planning -->
+  <rect x="50" y="330" width="1100" height="200" fill="#e6ffe6" stroke="#009900" stroke-width="2" rx="15"/>
+  <text x="600" y="360" font-size="20" text-anchor="middle" fill="#009900">High-Level Language Task Planning</text>
+
+  <!-- User Instruction -->
+  <rect x="150" y="390" width="250" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="275" y="420" font-size="16" text-anchor="middle">User Instruction</text>
+  <text x="275" y="440" font-size="12" text-anchor="middle">("Help me sort the toys")</text>
+
+  <!-- LLM + Skill Sequencer -->
+  <rect x="700" y="390" width="300" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="850" y="420" font-size="16" text-anchor="middle">LLM + Skill Sequencer</text>
+  <text x="850" y="440" font-size="12" text-anchor="middle">Skill Sequence Generation</text>
+
+  <!-- Arrows in Planning -->
+  <line x1="350" y1="430" x2="700" y2="430" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="300" x2="850" y2="390" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Next Skill Output -->
+  <rect x="500" y="540" width="200" height="50" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="600" y="570" font-size="16" text-anchor="middle">Next Skill</text>
+
+  <line x1="850" y1="470" x2="600" y2="540" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Skill Execution -->
+  <rect x="50" y="620" width="1100" height="200" fill="#e6f0ff" stroke="#003399" stroke-width="2" rx="15"/>
+  <text x="600" y="650" font-size="20" text-anchor="middle" fill="#003399">Low-Level Skill Execution</text>
+
+  <!-- ACT Model -->
+  <rect x="450" y="680" width="300" height="80" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="600" y="710" font-size="16" text-anchor="middle">ACT Model</text>
+  <text x="600" y="730" font-size="12" text-anchor="middle">Robot Action Generation</text>
+
+  <!-- Observation to ACT -->
+  <line x1="205" y1="190" x2="600" y2="680" stroke="#333333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+
+  <!-- Next Skill to ACT -->
+  <line x1="600" y1="590" x2="600" y2="680" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Robot Actions Output -->
+  <rect x="500" y="790" width="200" height="50" fill="#ffffff" stroke="#999999" stroke-width="1" rx="8"/>
+  <text x="600" y="820" font-size="16" text-anchor="middle">Robot Actions</text>
+
+  <line x1="600" y1="760" x2="600" y2="790" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+</svg>
