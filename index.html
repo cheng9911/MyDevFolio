@@ -72,14 +72,25 @@
                 <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                     Ph.D. Candidate in Artificial Intelligence
                   </p>
-                  <p class="text-base text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed flex items-center justify-center gap-2">
-                    <i class="fas fa-university text-blue-500"></i>
-                    Northeastern University
-                    <span class="mx-1">•</span>
-                    <i class="fas fa-robot text-indigo-500"></i>
-                    State Key Laboratory of Robotics,SIA
-                     Researching robotic dexterous manipulation and intelligent motion control
-                  </p>
+                  <div class="max-w-3xl mx-auto
+            flex flex-col items-center gap-4
+            text-gray-500 dark:text-gray-400">
+            <!-- 第一行：学校 / 实验室 -->
+            <div class="flex items-center gap-3
+                        bg-white/60 dark:bg-gray-800/60
+                        rounded-full px-4 py-2 shadow-sm">
+                <i class="fas fa-university text-blue-500"></i>
+                <span class="text-sm md:text-base font-medium">Northeastern University</span>
+                <span class="text-gray-300">•</span>
+                <i class="fas fa-robot text-indigo-500"></i>
+                <span class="text-sm md:text-base font-medium">State Key Laboratory of Robotics, SIA</span>
+            </div>
+
+            <!-- 第二行：研究方向 -->
+            <p class="text-center text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Researching robotic dexterous manipulation and intelligent motion control
+            </p>
+            </div>
             </div>
             
             <!-- Social Links -->
@@ -418,7 +429,7 @@
                 <div class="project-card filter-mobile" data-category="mobile">
                     <div class="project-video">
                          <video class="img-fluid" controls>
-                            <source src="assets/videos/chemist.mp4" type="video/mp4">
+                            <source src="https://raw.githubusercontent.com/cheng9911/MyDevFolio/master/assets/videos/chemist.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                          </video>
                         
@@ -433,7 +444,7 @@
                 <div class="project-card filter-teleop" data-category="teleop">
                     <div class="project-video">
                          <video class="img-fluid" controls style="width:100%">
-                            <source src="assets/videos/te_franka.mp4" type="video/mp4">
+                            <source src="https://raw.githubusercontent.com/cheng9911/MyDevFolio/master/assets/videos/te_franka.mp4" type="video/mp4">
                             <!-- Your browser does not support the video tag. -->
                             </video>
                     </div>
@@ -489,7 +500,7 @@
                 <div class="project-card filter-dual" data-category="dual">
                     <div class="project-video">
                         <video class="img-fluid" controls style="width:100%">
-                        <source src="assets/videos/dual_sim.mp4" type="video/mp4">
+                        <source src="https://raw.githubusercontent.com/cheng9911/MyDevFolio/master/assets/videos/dual_sim.mp4" type="video/mp4">
                         <!-- Your browser does not support the video tag. -->
                         </video>
                     </div>
