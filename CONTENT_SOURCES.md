@@ -65,3 +65,6 @@ The five current pages use the Taste contact-sheet direction. Historical HTML fi
 ## Research route and video archive
 Research route: owner-provided September 2026 defense slides, pages 15–17, 19–20 and 22. Page 17 contains three families and six concrete branches; movement structure mapping is the family containing body and hand mapping, not a seventh result. Future capabilities remain explicitly exploratory. External papers are not personal publications.
 The video archive exposes all 13 existing MP4 files. Posters and homepage frames come from those clips.
+
+Dual-layer variable stiffness: defense slides pp. 11–13, with the original p.12 diagram rendered locally. 30 Hz high-level strategy, 1 kHz low-level impedance control, residual-driven stiffness requests and energy-tank execution constraints are sourced from that slide. Teacher–student distillation is described as a technical route, without invented performance claims. This is a method under skill learning, not a fifteenth funded project.
+Homepage follow-up: each video now has one cover; repeated adjacent frames were removed at the owner’s request.
