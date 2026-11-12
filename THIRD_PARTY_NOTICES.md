@@ -63,3 +63,6 @@ THE SOFTWARE.
 
 ## Taste refresh
 Libre Franklin is bundled under the SIL Open Font License; see assets/fonts/LibreFranklin-OFL.txt. Experiment stills are extracted from existing site videos.
+
+## Alibaba PuHuiTi 3.0
+Regular and Bold WOFF2 files downloaded unchanged from the official Alibaba Fonts website (https://www.alibabafonts.com/) and its referenced fonts.alibabadesign.com distribution on 2026-11-12. Copyright Alibaba (China) Co., Ltd. Embedded font metadata and notices retained. Official legal declaration: https://www.yuque.com/yiguang-wkqc2/hgpff0/nus9wiinq4aeiegy . Fonts are provided as part of this website, not sold separately.

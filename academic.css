@@ -1,13 +1,15 @@
-/* C preview: approved personal academic direction. User-selected visual conventions. */
-:root { --color-paper:#fffefa; --color-sheet:#fffefa; --color-paper-2:#f3f5ef; --color-paper-3:#e9eee6; --color-ink:#242d28; --color-muted:#667168; --color-accent:#38644c; --color-accent-2:#264a36; --color-focus:#38644c; --container:1160px; --gutter:32px; --gap-columns:48px; --text-md:16px; --text-title:21px; --text-section:30px; --text-display:48px; }
+/* Academic editorial direction. Page content remains unchanged. */
+@font-face { font-family:'Alibaba PuHuiTi'; src:url('assets/fonts/AlibabaPuHuiTi-Regular.woff2') format('woff2'); font-style:normal; font-weight:100 500; font-display:swap; }
+@font-face { font-family:'Alibaba PuHuiTi'; src:url('assets/fonts/AlibabaPuHuiTi-Bold.woff2') format('woff2'); font-style:normal; font-weight:600 900; font-display:swap; }
+:root { --color-paper:#ffffff; --color-sheet:#ffffff; --color-paper-2:#f4f6f9; --color-paper-3:#e9eef6; --color-ink:#182230; --color-muted:#5e6978; --color-accent:#1553b5; --color-accent-2:#103d85; --color-focus:#1553b5; --font-display:"Alibaba PuHuiTi","Microsoft YaHei",sans-serif; --font-body:var(--font-display); --container:1160px; --gutter:32px; --gap-columns:48px; --text-md:16px; --text-title:21px; --text-section:30px; --text-display:48px; }
 body { line-height:1.8; }
-h1,h2,h3 { letter-spacing:0; font-family:Georgia,'Noto Serif CJK SC','Songti SC',serif; line-height:1.4; }
+h1,h2,h3 { letter-spacing:0; font-family:var(--font-display); line-height:1.4; }
 .container { width:100%; }
 .section { padding-block:52px; }
 .site-header { background:var(--color-paper); color:var(--color-ink); }
 .navigation { min-height:94px; }
 .wordmark { font-size:19px; }
-.wordmark-suffix { font-family:Georgia,serif; margin-left:8px; }
+.wordmark-suffix { font-family:var(--font-body); margin-left:8px; }
 .nav-links { gap:26px; }
 .nav-links a { font-size:15px; }
 .site-header a:hover { color:var(--color-accent); }
@@ -42,7 +44,7 @@ h1,h2,h3 { letter-spacing:0; font-family:Georgia,'Noto Serif CJK SC','Songti SC'
 .section-heading { align-items:start; margin-bottom:28px; }
 .section-heading>p { max-width:48ch; color:var(--color-muted); font-size:15px; }
 .research-timeline { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px; position:relative; padding-top:28px; margin-top:28px; }
-.research-timeline::before { content:''; height:2px; background:#b9c9bb; position:absolute; top:4px; left:0; right:0; }
+.research-timeline::before { content:''; height:2px; background:#c7d5ea; position:absolute; top:4px; left:0; right:0; }
 .research-timeline article { position:relative; }
 .timeline-dot { position:absolute; top:-30px; left:0; width:14px; height:14px; border-radius:50%; background:var(--color-accent); }
 .research-timeline h3 { font-size:21px; }
@@ -96,3 +98,47 @@ button.filter-btn { font-size:14px; }
 @media(max-width:640px) { :root { --gutter:22px; --text-section:27px; } .navigation { min-height:76px; } .wordmark { font-size:18px; } .hero { padding-top:24px; } .profile-intro { grid-template-columns:100px minmax(0,1fr); gap:20px; align-items:start; } .profile-photo img { width:100px;height:125px;border-radius:36px 36px 12px 12px; } .hero h1 { font-size:30px; } .hero h1 span { font-size:21px; } .profile-role { font-size:15px; } .profile-copy { display:contents; } .profile-copy h1,.profile-role { grid-column:2; } .profile-photo { grid-row:1/3; } .profile-role { margin-top:-14px; } .hero .lead,.profile-affiliation,.hero .actions { grid-column:1/-1; margin-top:0; } .hero .lead { font-size:17px; } .profile-affiliation { font-size:14px; } .research-interests { margin-top:24px;gap:10px 20px;font-size:14px;padding:14px 0; } .research-interests>span { flex-basis:100%; } .section { padding-block:34px; } .feature { padding-top:20px; } .featured-image { border-radius:8px; } .section-heading p { margin-top:14px; } .research-timeline { grid-template-columns:1fr; padding:0 0 0 24px; gap:32px; } .research-timeline::before { top:5px;bottom:0;left:4px;width:2px;height:auto;right:auto; } .timeline-dot { left:-25px;top:7px;width:12px;height:12px; } .research-timeline h3 { font-size:21px; } .systems-grid,.publication-layout,.about-grid { grid-template-columns:1fr; } .systems-grid { padding:22px;gap:20px; } .robot-visual img { height:220px; } .systems-copy h2 { font-size:32px; } .projects-grid { grid-template-columns:1fr;gap:28px; } .video-meta h3 { font-size:20px; } .contact-section>.container { border-radius:0; padding:28px 22px; } .contact-top h2 { font-size:27px; } .contact-email { font-size:22px; } .contact-columns { grid-template-columns:1fr;gap:24px; } .archive-intro h1 { font-size:36px; } .archive-intro .lead { font-size:19px; } }
 
 .profile-photo img,.portrait img { height:auto; aspect-ratio:357/354; object-fit:contain; object-position:center; border-radius:0; }
+
+/* Editorial hierarchy: biography first, compact illustrated research articles. */
+body { line-height:1.75; }
+.navigation { min-height:86px; }
+.nav-links a { font-weight:500; }
+.hero { padding-top:46px; }
+.profile-intro { grid-template-columns:minmax(0,1fr) 240px; gap:72px; align-items:center; }
+.profile-copy { grid-column:1; grid-row:1; }
+.profile-photo { grid-column:2; grid-row:1; }
+.profile-photo img { width:240px; }
+.hero h1 { font-size:46px; font-weight:700; }
+.hero h1 span { display:block; font-size:30px; font-weight:400; margin:4px 0 0; }
+.profile-role { font-size:18px; font-weight:500; }
+.hero .lead { max-width:42ch; margin-top:22px; }
+.research-interests { margin-top:32px; padding:20px 0; border-top:1px solid #e3e8ef; border-bottom:1px solid #e3e8ef; }
+.button,button.filter-btn { border-radius:3px; }
+.section { padding-block:46px; }
+h2 { font-size:29px; font-weight:700; }
+h3 { font-weight:600; }
+#phaseact>.container { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:36px; align-items:center; }
+.featured-image { border-radius:3px; }
+.feature-grid { margin-top:0; }
+.feature-copy h2 { font-size:27px; }
+.project-name { font-size:19px; font-weight:600; }
+.feature-copy>p { font-size:16px; }
+.feature-copy .actions { gap:18px; }
+.feature-copy .button { padding:10px 16px; }
+.section-heading { margin-bottom:32px; }
+.research-timeline h3 { font-size:20px; }
+.research-timeline .route-focus { color:var(--color-ink); }
+.systems-grid { border-radius:3px; padding:30px; }
+.robot-visual img { height:280px; }
+.video-entry video { border-radius:3px; }
+.video-meta h3 { font-size:18px; font-weight:600; }
+.publication-layout,.about-grid { grid-template-columns:210px minmax(0,1fr); }
+.paper { padding-block:0 28px; }
+.paper+.paper { padding-top:24px; border-top:1px solid #e3e8ef; }
+.paper-title { font-size:19px; }
+.patent,.experience,.bibliography .paper,.exploration-list article { border-radius:3px; }
+.contact-section>.container { background:var(--color-paper-2); border-radius:3px; }
+.contact-top h2 { font-size:29px; }
+.contact-email { font-size:26px; }
+@media(max-width:1000px) { .profile-intro { grid-template-columns:minmax(0,1fr) 180px; gap:32px; } .profile-photo img { width:180px; } .hero h1 { font-size:38px; } .hero h1 span { font-size:27px; } #phaseact>.container { gap:28px; } .feature-copy .actions { gap:12px; } .feature-copy .button { font-size:14px; } .systems-copy { order:0; } }
+@media(max-width:640px) { .navigation { min-height:76px; } .hero { padding-top:22px; } .profile-intro { grid-template-columns:minmax(0,1fr) 96px; gap:20px; align-items:start; } .profile-copy { display:contents; } .profile-photo { grid-column:2; grid-row:1/3; } .profile-photo img { width:96px; } .profile-copy h1,.profile-role { grid-column:1; } .hero h1 { font-size:32px; } .hero h1 span { font-size:22px; } .profile-role { font-size:15px; margin-top:-12px; } .hero .lead { margin-top:0; max-width:none; } .hero .actions { gap:12px; } .research-interests { margin-top:28px; } #phaseact>.container { grid-template-columns:1fr; gap:22px; } .section { padding-block:34px; } .section-heading h2 { font-size:27px; } .publication-layout,.about-grid { grid-template-columns:1fr; } .contact-section>.container { border-radius:0; } .contact-email { font-size:22px; } }
