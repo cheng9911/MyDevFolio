@@ -36,3 +36,11 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
   });
   document.getElementById('filter-status').textContent = `显示 ${count} 个项目`;
 }));
+
+// Deep links reveal the selected project while native details still work without JS.
+function revealLinkedProject() {
+  const target = document.getElementById(location.hash.slice(1));
+  if (target && target.matches('details.experience')) target.open = true;
+}
+window.addEventListener('hashchange', revealLinkedProject);
+revealLinkedProject();

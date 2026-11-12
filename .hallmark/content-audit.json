@@ -4,7 +4,7 @@
   "originalIds": 10,
   "preservedIds": 10,
   "patentsPreserved": 7,
-  "note": "All patent titles, inventor strings and record strings are retained verbatim in native details. Render comparison does not include collapsed contents. Biography and navigation translated to Chinese; descriptions condensed; original historical HTML files retained.",
+  "note": "Original seven patent English titles, inventor strings and application IDs retained on publications.html. Date-only old strings replaced by dated status records. Fourteen participation entries; four papers; two under-review manuscripts; ten patents. Contact and original section IDs preserved.",
   "originalHeadings": [
     "Jincheng Sun",
     "About Me",
@@ -57,18 +57,27 @@
     "动力学辨识工具",
     "ROCOS",
     "在机器人上验证",
-    "Mobile Robotic Chemist",
+    "榆林无人实验室",
     "Gello Teleoperation",
     "Dual Robot in MuJoCo",
-    "Action Chunking with Transformers",
+    "示范采集与技能学习",
     "VR Teleoperation",
     "Skill-Aware Execution",
-    "论文项目 与专利记录",
-    "Skill-Aware Robotic Task Execution with Executable-Semantic Descriptors and CLIP-LLM Planning",
+    "论文与专利",
+    "Bio-Inspired Phase-Aware Skill Graph for Robust Long-Horizon Robotic Manipulation with Promptable Control",
+    "机器人辅助膝关节置换术柔顺控制",
     "关于我",
     "聊聊机器人， 或者下一次合作。",
     "联系",
     "找到我",
     "所在实验室"
+  ],
+  "projectEntries": 14,
+  "papers": 4,
+  "manuscriptsUnderReview": 2,
+  "patentRecords": 10,
+  "archivePages": [
+    "projects.html",
+    "publications.html"
   ]
 }

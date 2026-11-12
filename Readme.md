@@ -15,7 +15,9 @@ Open http://127.0.0.1:8766/.
 
 ## Content and maintenance
 
-- `index.html`: biography, research directions, public projects, demonstrations and patent records.
+- `index.html`: biography, research directions, public projects, demonstrations and selected scholarly work.
+- `projects.html`: 14 project/subtopic roles, experimental platforms and public repositories.
+- `publications.html`: four papers, two manuscripts under review, and ten patent records with dated status labels.
 - `style.css`: responsive page layouts and Hallmark design record.
 - `assets/css/tokens.css`: Almanac palette, fonts and spacing.
 - `assets/css/base.css`, `assets/css/fonts.css`: shared foundation and local font loading.
@@ -24,8 +26,8 @@ Open http://127.0.0.1:8766/.
 
 Keep the distinction between public project material and work in progress. Do not
 add unpublished numerical results, manuscript files or unconfirmed acceptance
-claims to this public repository. Patent titles, inventors and dates are retained
-from the earlier homepage; they are not newly verified patent metadata.
+claims to this public repository. Acceptance, review and patent states carry an explicit reference date. Update them
+from owner-provided evidence or a public publication record, not from project plans.
 
 Videos use native playback controls and `preload="none"`. Poster frames keep the
 page useful without downloading the video. The navigation, research descriptions,

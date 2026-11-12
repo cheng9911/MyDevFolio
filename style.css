@@ -1,7 +1,8 @@
-/* Hallmark · shape: Research portfolio · genre: editorial · theme: Almanac (deal 1/3) · redesign: full
+/* Hallmark · shape: Research portfolio · genre: editorial · theme: Almanac (deal 1/3) · redesign: polish
  * hero: Index · nav: edge-aligned · footer: index columns · imagery: real project photographs and Talon render · signature: a working robotics research index beside the real teleoperation experiment
  * axes: mid/grotesk-sans/chromatic-magenta · posture: restrained · draw: a3dee2, shape adapted to independent research projects · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: H, large name and project index establish hierarchy before research details */
+/* Hallmark · copy: verbatim · academic paper titles and project names preserve the owner-provided wording; Robust is part of the published title, not marketing copy. */
 /* Hallmark · dropped https://cdn.tailwindcss.com, https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js · missing local styles and script replaced with self-hosted assets and a static readable role */
 /* Hallmark · dismissed 25 · section intros are one-sentence ledes at 30ch, within the allowed caption and lede measure */
 /* Hallmark · hero-review: fix · 1 finding · 1 resolved: actual robot image precedes compact project index on mobile */
@@ -165,3 +166,44 @@ abbr[title] { text-decoration: none; }
  .hero-index span { font-size: 20px; }
  .hero-index small { text-align: right; font-size: 13px; }
 }
+
+/* Content extension: project archive and dated scholarly records, using the existing Almanac system. */
+.education { margin-top: var(--space-xl); }
+.education>div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: var(--space-md); border-top: 1px solid var(--color-rule); padding-block: var(--space-md); }
+.education dd { font-size: var(--text-sm); }
+.archive-intro { border-bottom: 1px solid var(--color-rule-2); }
+.archive-intro h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); line-height: 1.15; }
+.archive-intro .lead { margin-top: var(--space-lg); }
+.archive-context { margin-top: var(--space-lg); max-width: 58ch; color: var(--color-muted); }
+.platform-section { background: var(--color-sheet); }
+.platform-layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--gap-columns); align-items: center; }
+.platform-layout>figure img { height: 600px; width: 100%; object-fit: contain; }
+.platform-layout h2 { line-height: 1.2; }
+.platform-layout p { margin-top: var(--space-lg); max-width: 46ch; }
+.exo-figure { margin-top: var(--space-xl); max-width: 300px; }
+.exo-figure img { width: 100%; height: auto; }
+.experience-list { border-top: 2px solid var(--color-rule-2); }
+.experience { border-bottom: 1px solid var(--color-rule); scroll-margin-top: var(--space-xl); }
+.experience summary { position: relative; padding: var(--space-xl) var(--space-xl) var(--space-xl) 0; display: flex; align-items: baseline; gap: var(--gap-columns); cursor: pointer; list-style: none; }
+.experience summary::-webkit-details-marker { display: none; }
+.experience summary::after { content: '+'; position: absolute; right: 0; top: var(--space-xl); font-size: var(--text-title); color: var(--color-accent); }
+.experience[open] summary::after { content: '−'; }
+.project-number { font-size: var(--text-sm); color: var(--color-muted); min-width: 2ch; }
+.experience-title { display: block; font: 600 var(--text-title)/1.45 var(--font-display); }
+.experience-role { display: block; margin-top: var(--space-sm); font-size: var(--text-md); color: var(--color-muted); }
+.experience-body { margin-left: calc(2ch + var(--gap-columns)); padding-bottom: var(--space-xl); max-width: 62ch; }
+.experience-body p+p { margin-top: var(--space-md); }
+.software-list article { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--gap-columns); border-top: 1px solid var(--color-rule); padding-block: var(--space-xl); }
+.software-list p { margin-top: var(--space-sm); }
+.software-links { display: flex; align-items: start; justify-content: end; gap: var(--space-lg); flex-wrap: wrap; }
+.archive-layout { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: var(--gap-columns); }
+.archive-layout .note { margin-top: var(--space-lg); max-width: 36ch; }
+.bibliography .paper { padding-top: var(--space-xl); border-top: 1px solid var(--color-rule); }
+.bibliography .paper h3 { max-width: 50ch; }
+.publication-meta { color: var(--color-accent); font-size: var(--text-sm); }
+.patent-meta { display: block; margin-top: var(--space-sm); color: var(--color-muted); font: 400 var(--text-sm)/1.6 var(--font-body); }
+@media (max-width: 60rem) { .archive-layout { grid-template-columns: minmax(0, 1fr); } .platform-layout>figure img { height: 480px; } .software-list article { grid-template-columns: minmax(0, 1fr); } .software-links { justify-content: start; } }
+@media (max-width: 40rem) { .platform-layout { grid-template-columns: minmax(0, 1fr); } .platform-layout>figure img { max-height: 440px; } .exo-figure { max-width: 240px; } .experience-title { font-size: 21px; } .experience summary { gap: var(--space-md); } .experience-body { margin-left: 0; } .education>div { grid-template-columns: minmax(0, 1fr); gap: var(--space-xs); } }
+
+.archive-intro { padding-block: var(--space-2xl); }
+#project-list .archive-context { margin-bottom: var(--space-xl); }

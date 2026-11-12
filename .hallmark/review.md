@@ -44,3 +44,23 @@ The old patent list exposed all metadata at once; the new list deliberately
 uses native disclosures to reduce page density, retaining all source strings.
 Material gap: none required for this version. Future publicly approved hand
 mapping or dynamics-identification demonstrations would enrich those entries.
+
+## Profile enrichment, 2026-11-12
+
+Added project and publication archives using the existing visual system. Independent
+code review: no material findings. Independent finish review: ship, no actionable
+visual findings. Academic titles and supplied project names retain their wording;
+compact reading-page introductions and the reference catalogue are deliberate.
+
+Final browser checks cover all three pages at 320, 390, 768, 1280 and 1920px,
+14 project disclosures, 4 paper entries, 2 under-review manuscripts, 10 patent
+entries, cross-page fragments, local assets, mobile Escape and no-JS disclosures.
+No overflow, failed local responses or JavaScript exceptions. Existing homepage
+video filters, contact links and original anchors remain working.
+
+Render lint: 0 FAIL, 0 REFLEX, 3 reviewed historical-content warnings. Original
+patent titles/inventors/application IDs moved to publications.html; date-only
+strings replaced with explicitly dated source status. The published Biomimetics
+record supersedes its earlier acceptance label. No new paper is inferred from
+internal project milestones. The AI-practice paragraph and public OpenClaw
+repository row reflect the owner's explicit positioning request.
