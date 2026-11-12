@@ -60,5 +60,8 @@ inventor lists and application IDs are preserved in expanded entries on
 `publications.html`. Ambiguous date-only strings from the old page are replaced by
 explicitly dated status records; application and publication numbers are distinct.
 
-The homepage, project index and publication catalogue use the existing Hallmark
-Almanac design. Historical HTML files remain untouched.
+The five current pages use the Taste contact-sheet direction. Historical HTML files remain untouched.
+
+## Research route and video archive
+Research route: owner-provided September 2026 defense slides, pages 15–17, 19–20 and 22. Page 17 contains three families and six concrete branches; movement structure mapping is the family containing body and hand mapping, not a seventh result. Future capabilities remain explicitly exploratory. External papers are not personal publications.
+The video archive exposes all 13 existing MP4 files. Posters and homepage frames come from those clips.

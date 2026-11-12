@@ -48,3 +48,6 @@ are needed for the site.
 The original MIT license remains in `LICENSE`. Local Hanken Grotesk and Newsreader
 fonts are licensed under the SIL Open Font License; licenses ship beside the
 font files. Additional asset attribution is in `THIRD_PARTY_NOTICES.md`.
+
+## Current site
+Five static pages: homepage, research route, 14-project catalogue, complete 13-video archive, and publications/patents. Taste contact-sheet direction uses local experiment frames and self-hosted Libre Franklin. Native video/details and direct clip links work without JavaScript; enhanced previews support Escape and focus restoration, with reduced-motion support.

@@ -44,3 +44,32 @@ function revealLinkedProject() {
 }
 window.addEventListener('hashchange', revealLinkedProject);
 revealLinkedProject();
+
+const experimentDialog = document.getElementById('experiment-dialog');
+if (experimentDialog && typeof experimentDialog.showModal === 'function') {
+  const player = document.getElementById('experiment-player');
+  let opener;
+  document.querySelectorAll('[data-experiment]').forEach((link, index) => {
+    link.style.setProperty('--order', index);
+    link.addEventListener('click', event => {
+      event.preventDefault(); opener = link;
+      document.getElementById('experiment-title').textContent = link.dataset.experiment;
+      player.src = link.href; experimentDialog.showModal();
+      player.play().catch(() => {});
+    });
+  });
+  document.getElementById('close-experiment').addEventListener('click', () => experimentDialog.close());
+  experimentDialog.addEventListener('close', () => {
+    player.pause(); player.removeAttribute('src'); player.load();
+    if (opener) opener.focus({preventScroll:true});
+  });
+}
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('reveal-arrived'); observer.unobserve(entry.target);
+    });
+  }, {threshold:0.12});
+  document.querySelectorAll('.section h2,.section figure,.research-rows article,.project-info,.paper,.experience,.software-list article,.about-copy>p,.contact-columns>div,.video-entry,.loop-steps article,.exploration-list article,.trajectory-list article,.question-layout article').forEach(el => observer.observe(el));
+}

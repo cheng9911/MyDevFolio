@@ -60,3 +60,6 @@ THE SOFTWARE.
 ## Research-defense images
 
 `humanoid-platform.webp` and `exoskeleton.webp` were extracted from the owner-provided September 2026 presentation. They depict the real team platform and exoskeleton design. These project images are not stock material and do not imply sole hardware authorship.
+
+## Taste refresh
+Libre Franklin is bundled under the SIL Open Font License; see assets/fonts/LibreFranklin-OFL.txt. Experiment stills are extracted from existing site videos.
