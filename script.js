@@ -34,7 +34,7 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
     if (project.hidden) project.querySelectorAll('video').forEach(video => video.pause());
     else count += 1;
   });
-  document.getElementById('filter-status').textContent = `显示 ${count} 个项目`;
+  document.getElementById('filter-status').textContent = `显示 ${count} 段视频`;
 }));
 
 // Deep links reveal the selected project while native details still work without JS.
