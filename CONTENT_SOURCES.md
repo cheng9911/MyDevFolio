@@ -68,3 +68,6 @@ The video archive exposes all 13 existing MP4 files. Posters and homepage frames
 
 Dual-layer variable stiffness: defense slides pp. 11–13, with the original p.12 diagram rendered locally. 30 Hz high-level strategy, 1 kHz low-level impedance control, residual-driven stiffness requests and energy-tank execution constraints are sourced from that slide. Teacher–student distillation is described as a technical route, without invented performance claims. This is a method under skill learning, not a fifteenth funded project.
 Homepage follow-up: each video now has one cover; repeated adjacent frames were removed at the owner’s request.
+
+## Approved academic redesign
+Owner selected concept C: light personal academic layout. Research progression is explicitly self-developed arm kinematics/dynamics → robot skill learning → embodied intelligence and AI practice. Portrait replaced with the owner-supplied image on 2026-11-12. All five pages, 13 experimental videos, 14 project records, and publication/patent records retained.
