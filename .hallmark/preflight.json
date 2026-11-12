@@ -1,0 +1,19 @@
+{
+  "scanned": "2026-11-12",
+  "findings": {
+    "fonts": "index.html:9 Inter and Crimson Text via Google Fonts",
+    "palette": "index.html:24 Tailwind blue and slate defaults",
+    "framework": "Static HTML, missing style.css and script.js",
+    "motion": "Unused Typed.js CDN"
+  },
+  "preserve": [
+    "All original anchor IDs, links, biographical facts, patents and demonstrations",
+    "GitHub Pages and CNAME"
+  ],
+  "introduce": [
+    "Almanac tokens",
+    "Local fonts and styles",
+    "Working navigation and project filters",
+    "Recent research and verified public project sites"
+  ]
+}

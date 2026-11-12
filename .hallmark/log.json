@@ -1,0 +1,39 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "page",
+  "shape": "Research portfolio",
+  "theme": "almanac",
+  "axes": "mid/grotesk-sans/chromatic-magenta",
+  "hero": "Index",
+  "nav": "edge-aligned",
+  "footer": "index columns",
+  "imagery": "Existing robot video stills, public MPSG-Control demonstration and Talon model rendering",
+  "photos": [],
+  "entry": "index.html",
+  "fingerprint": [
+   "large-name",
+   "project-index",
+   "asymmetric-feature",
+   "ruled-records",
+   "quiet-native-video",
+   "no-reveal"
+  ],
+  "sections": [
+   "research index hero",
+   "MPSG-Control feature",
+   "current research rows",
+   "ROCOS system",
+   "filtered demonstrations",
+   "papers and patent disclosures",
+   "biography",
+   "contact index"
+  ],
+  "signature": "Research index alongside a real Franka teleoperation experiment",
+  "waived": [],
+  "prompt": "Improve Jincheng Sun personal website using Hallmark; include recent work and project websites",
+  "adaptation": "Feature Stack draw changed to a research portfolio because independent projects have no shared state to scroll-sync; native section links and filters fit the material.",
+  "date": "2026-11-12"
+ }
+]
